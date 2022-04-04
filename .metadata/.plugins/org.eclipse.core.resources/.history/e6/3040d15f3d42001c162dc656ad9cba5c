@@ -1,0 +1,20 @@
+package encryptiontest;
+
+import org.junit.Test;
+
+public class teamProject_AES {
+
+	public static int[][] getKey(){
+		int[][] key = new int[4][4];
+		return key;
+	}
+	
+	public int[][] matrixMultication(int i, int[][] a, int[][]b){
+		
+	}
+	@Test
+	public void test1(){
+		int[][]a = new int[2][3];
+		System.out.print(a[1].length);
+	}
+}

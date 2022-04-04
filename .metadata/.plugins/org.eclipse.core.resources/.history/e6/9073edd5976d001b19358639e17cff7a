@@ -1,0 +1,15 @@
+package facetoobject;
+
+public class Person {
+
+	int age;
+	
+	int getAge(){
+	return age;
+	}
+	
+	void setAge(int a){
+	age = a;
+	}
+	
+}

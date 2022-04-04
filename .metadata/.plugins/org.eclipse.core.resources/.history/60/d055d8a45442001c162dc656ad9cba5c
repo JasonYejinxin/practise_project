@@ -1,0 +1,34 @@
+package encryptiontest;
+
+import org.junit.Test;
+
+public class teamProject_AES {
+
+	public static int[][] getKey(){
+		int[][] key = new int[4][4];
+		return key;
+	}
+	
+	public static int[][] matrixMultication(int size, int[][] a, int[][]b){
+		if(a.length != b[0].length) return null;
+		int[][]resultMatrix = new int[size][size];
+		for(int i = 0; i < size; i++){
+			for(int j = 0,m = 0; j < size || m < size; m+= (j+1)/size, j++){
+				if(m != size - 1 && j == size) j = 0;
+				resultMatrix[i][m] += a[i][j] * b[j][i];		
+			}
+		}
+		return resultMatrix;
+	}
+	@Test
+	public void test1(){
+		int[][] a = {{1,2},{3,4}};
+		int[][] b = {{1,2},{3,4}};
+		int[][]c = matrixMultication(2,a,b);
+		for(int i = 0; i < c.length; i++){
+			for(int j = 0; j < c[i].length; j++){
+				System.out.print(c[i][j] + " ");
+			}
+		}
+	}
+}

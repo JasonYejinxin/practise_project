@@ -1,0 +1,39 @@
+package facetoobject;
+
+public class CircleTest {
+	public static void main(String[] args) {
+		
+		Circle C = new Circle();
+		C.radius = 6.9898;
+	
+		int time = (int)C.radius; 
+		PassObject output = new PassObject();
+		output.printAreas(C,time);
+	}
+
+}
+
+
+class Circle{
+	double radius;
+	double squre;
+	
+	public double findArea(){
+		squre = radius * radius * Math.PI;
+		return squre;
+	}
+}
+
+
+class PassObject{
+	public void printAreas(Circle C,int time){
+	
+	System.out.println("Radius" + "\t" + "Area");
+	double p = C.radius;
+		for(int i = 1;i <= time;i++){
+			C.radius = i;
+			System.out.println(i * 1.0 + "\t" + C.findArea());
+		}
+		System.out.println("now redius is " + p);
+	}
+}

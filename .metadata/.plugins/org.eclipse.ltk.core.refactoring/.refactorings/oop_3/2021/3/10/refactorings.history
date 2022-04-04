@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;staticTest&apos; to &apos;statictest&apos;&#x0D;&#x0A;- Original project: &apos;oop_3&apos;&#x0D;&#x0A;- Original element: &apos;oop_3/src/staticTest&apos;&#x0D;&#x0A;- Renamed element: &apos;oop_3/src/statictest&apos;&#x0D;&#x0A;- Update references to refactored element&#x0D;&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;staticTest&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;staticTest" name="statictest" qualified="false" references="true" stamp="1614674644313" textual="false" version="1.0"/>
+</session>

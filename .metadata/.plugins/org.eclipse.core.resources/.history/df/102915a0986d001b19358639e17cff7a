@@ -1,0 +1,20 @@
+package facetoobject;
+
+public class Person {
+
+	int age;
+	
+	int getAge(){
+		return age;
+	}
+	
+	void setAge(int a){
+		if (a >130 || a <0){
+			System.out.println("请输入正确的年龄");
+		}
+		else {age = a;
+		System.out.println(age);}
+
+	}
+	
+}

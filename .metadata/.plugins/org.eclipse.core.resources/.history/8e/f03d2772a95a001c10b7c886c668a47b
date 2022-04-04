@@ -1,0 +1,9 @@
+package facetoobject;
+import org.junit.Test;
+public class FinalTest {
+		@Test
+		public void t1(){
+			System.out.print("121");
+		}
+	}
+
